@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: 001_Ethan_Welcome
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Bom dia, Senhor Prefeito! tudo bem com o senhor? A minha equipe e eu
+        somos da constru\xE7\xE3o e estamos comprometidos em garantir a seguran\xE7a
+        e o bem-estar de nossa comunidade."
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Estamos preparados para fazer as obras necess\xE1rias para minimizar
+        os efeitos dos desastres naturais em nossa cidade. "
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "E como isso funciona? \xC9 f\xE1cil senhor prefeito. \xC9 s\xF3 o senhor
+        identificar o local de perigo e nos encarregar de construir as obras necess\xE1rias."
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Vamos procurar um exemplo. Procure no mapa um lugar com um s\xEDmbolo
+        vermelho."
+      TriggerAction:
+      - {fileID: 11400000, guid: e228d73f57aa8d24499a8a42eab174f4, type: 2}
+      - {fileID: 11400000, guid: 85f2d9f797445a34ba3abef932c33785, type: 2}
+      WaitActionsToComplete: 1
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Isso, veja que aqui h\xE1 uma grande pedra e, em caso de deslizamento
+        de terra, essa pedra poderia causar v\xE1rios danos \xE0 nossa sociedade."
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Basta o senhor agora clicar em \u201Cenviar equipe de constru\xE7\xE3o\u201D
+        que n\xF3s vamos remover essa pedra no mesmo instante."
+      TriggerAction:
+      - {fileID: 11400000, guid: 6313281b43f5e0c4eb4ca48309d9a864, type: 2}
+      WaitActionsToComplete: 1
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Pronto senhor prefeito. Obra conclu\xEDda! Veja que essa obra teve um
+        custo a verba p\xFAblica, por\xE9m, se esta n\xE3o fosse feita, o custo para
+        a recupera\xE7\xE3o seria bem maior.\r"
+      TriggerAction:
+      - {fileID: 11400000, guid: c003d4bc057bf244bbf4a4f57577d7fe, type: 2}
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: "Agora, quando tiver um tempinho, identifique outros locais que possam
+        ser perigosos \xE0 popula\xE7\xE3o e nos chame!"
+      TriggerAction: []
+      WaitActionsToComplete: 0
+  ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
+
+    "1bd70322-ca1d-43b5-85cd-f9f93679efe4"
+    : "test2",
+
+    "5e04e6fb-7e26-4828-89b0-2803742d852c" : "test2",
+
+'

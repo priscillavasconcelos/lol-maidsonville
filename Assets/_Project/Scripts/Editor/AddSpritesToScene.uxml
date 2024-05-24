@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 1;">
+        <uie:ObjectField label="Object Field" type="PrisVas.Maidsonville.Editor.SpritesListSO, Assembly-CSharp-Editor" name="objectField" style="padding-top: 20px; padding-bottom: 20px;" />
+        <ui:Button text="Add all" parse-escape-sequences="true" display-tooltip-when-elided="true" name="addButton" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: 001_Maria_Welcome
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Oi senhor prefeito! Meu nome \xE9 Dra. Maria, e sou uma cientista dedicada
+        a estudar e prever desastres naturais em nossa regi\xE3o. "
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Como sabemos, nossa cidade \xE9 suscet\xEDvel a uma variedade de desastres
+        naturais."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Minha proposta \xE9 que o governo municipal invista no nosso polo cient\xEDfico,
+        fornecendo os equipamentos e recursos necess\xE1rios para melhorar nossas
+        capacidades de previs\xE3o e detec\xE7\xE3o precoce desses eventos sempre
+        que for pedido!"
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Com equipamentos mais avan\xE7ados e tecnologias de ponta, podemos detectar
+        desastres com maior anteced\xEAncia, dando ao senhor, como prefeito, mais
+        tempo para agir e implementar medidas preventivas. "
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Al\xE9m disso, nossa pesquisa cient\xEDfica pode ajudar a identificar
+        qual \xE9 a melhor t\xE9cnica para se preparar para cada tipo de desastre
+        que possa ocorrer em nossa regi\xE3o."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Entendo que cada equipamento ter\xE1 um custo associado, mas veja bem,
+        investir no nosso polo cient\xEDfico \xE9 investir no futuro de nossa cidade."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Estamos falando n\xE3o apenas em prevenir perdas materiais, mas tamb\xE9m
+        em salvar vidas e proteger nossa comunidade de forma eficaz e proativa."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Estou animada com a possibilidade de colaborarmos juntos! At\xE9!"
+      TriggerAction: []
+  ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
+
+    "1bd70322-ca1d-43b5-85cd-f9f93679efe4"
+    : "test2",
+
+    "5e04e6fb-7e26-4828-89b0-2803742d852c" : "test2",
+
+'

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe630f9a00f2b94c9c3aa01077bb569, type: 3}
+  m_Name: Ethan Morgan
+  m_EditorClassIdentifier: 
+  Character:
+    CharacterName: Ethan Morgan
+    CharacterRoundSprite: {fileID: 21300000, guid: 49657e9c65509164987780c0a7279fed, type: 3}
+    CharacterSquareSprite: {fileID: 21300000, guid: dbafcfb615baaec42adc6936463b6085, type: 3}
+    CharacterRole:
+      RoleName: Builder
+      RoleSprite: {fileID: 21300000, guid: 4b691b7c76be10c439747a2f6a539d02, type: 3}

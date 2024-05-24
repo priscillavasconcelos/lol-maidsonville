@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe630f9a00f2b94c9c3aa01077bb569, type: 3}
+  m_Name: John Smith
+  m_EditorClassIdentifier: 
+  Character:
+    CharacterName: John Smith
+    CharacterRoundSprite: {fileID: 21300000, guid: a981af44fd23f904695237fbbf8435fe, type: 3}
+    CharacterSquareSprite: {fileID: 21300000, guid: d73ccb530a5112946acb930583d5d17b, type: 3}
+    CharacterRole:
+      RoleName: Reporter
+      RoleSprite: {fileID: 21300000, guid: ff670ee3005d53f4989a5385e5637ba6, type: 3}

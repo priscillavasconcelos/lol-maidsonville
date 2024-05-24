@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: 001_Chloe_Welcome
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "Bom dia senhor Prefeito. Sou a Dra. Chloe, m\xE9dica-chefe do hospital
+        local, e estou aqui para discutir um assunto de extrema import\xE2ncia para
+        a seguran\xE7a e o bem-estar de nossa comunidade."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "Como sabemos, nosso hospital desempenha um papel crucial em momentos
+        de crise, especialmente durante desastres naturais.\r"
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "\xC9 por isso que, eventualmente, precisaremos procurar o apoio do gabinete
+        do prefeito para solicitar equipamentos adicionais."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "Esses equipamentos podem incluir desde suprimentos m\xE9dicos b\xE1sicos
+        at\xE9 equipamentos de emerg\xEAncia especializados, como respiradores e
+        kits de primeiros socorros."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "Compreendemos que cada pedido desses ter\xE1 um custo associado. No
+        entanto, \xE9 importante ressaltar que o custo de n\xE3o estarmos preparados
+        para atender adequadamente a nossa popula\xE7\xE3o em momentos de crise seria
+        muito maior."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "A falta de equipamentos e recursos adequados pode resultar em perdas
+        humanas e danos irrepar\xE1veis \xE0 sa\xFAde p\xFAblica."
+      TriggerAction: []
+    - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
+      Text: "Portanto, ao investir na capacidade de resposta do nosso hospital, estamos
+        investindo na seguran\xE7a e no bem-estar de todos os cidad\xE3os."
+      TriggerAction: []
+  ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
+
+    "1bd70322-ca1d-43b5-85cd-f9f93679efe4"
+    : "test2",
+
+    "5e04e6fb-7e26-4828-89b0-2803742d852c" : "test2",
+
+'

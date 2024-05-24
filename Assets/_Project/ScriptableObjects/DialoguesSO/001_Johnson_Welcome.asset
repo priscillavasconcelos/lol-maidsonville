@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: 001_Johnson_Welcome
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
+      Text: "Ah, Senhor Prefeito, que prazer t\xEA-lo aqui conosco! Sou Johnson,
+        o respons\xE1vel por trazer as \xFAltimas not\xEDcias sobre o tempo e educa\xE7\xE3o
+        para nossa comunidade.\r"
+    - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
+      Text: "Aqui na emissora estamos comprometidos em fornecer informa\xE7\xF5es
+        precisas e relevantes para todos os moradores da cidade. "
+    - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
+      Text: "Seja sobre as condi\xE7\xF5es clim\xE1ticas ou programas educacionais,
+        estamos sempre prontos para informar."
+    - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
+      Text: "Sempre que o senhor desejar passar uma not\xEDcia \xE0 comunidade, bastar\xE1
+        dar um clique em nossa emissora e solicitar um comunicado especial. \r"
+    - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
+      Text: "Terei o maior prazer em transmitir sua mensagem para toda a cidade!
+        Juntos podemos fazer a diferen\xE7a!"
+  ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
+
+    "1bd70322-ca1d-43b5-85cd-f9f93679efe4"
+    : "test2",
+
+    "5e04e6fb-7e26-4828-89b0-2803742d852c" : "test2",
+
+'

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe630f9a00f2b94c9c3aa01077bb569, type: 3}
+  m_Name: MariaDolores
+  m_EditorClassIdentifier: 
+  Character:
+    CharacterName: Maria Dolores
+    CharacterRoundSprite: {fileID: 21300000, guid: 0a8cdcef297c8e84a9c0a291def7fa66, type: 3}
+    CharacterSquareSprite: {fileID: 21300000, guid: 36d4896b7708d5e44a33946b5518b940, type: 3}
+    CharacterRole:
+      RoleName: Scientist
+      RoleSprite: {fileID: 21300000, guid: bf9ccfd946a4df94ca1240baa169d6d7, type: 3}
