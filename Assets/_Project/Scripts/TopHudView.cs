@@ -37,7 +37,7 @@ public class TopHudView : HudView<TopHudView>
         _moneyAmountText.text = _moneyAmount.ToString();
     }
 
-    private void UpdateTimer(string newValue)
+    public void UpdateTimer(string newValue)
     {
         _timerText.text = newValue;
     }
