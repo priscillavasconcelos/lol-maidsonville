@@ -24,16 +24,16 @@ public class TimeWatcher : MonoBehaviour
     {
         var schedule = schedules.FirstOrDefault(s => s.day == timeManager.day && s.hour == newTime.Hours && s.minute == newTime.Minutes);
 
-        schedule?.action?.Invoke();
+        schedule?.action?.Initialize();
     }
 
     [Serializable]
     private class Schedule
     {
         public string eventName;
-        public int day = 1;
+        public int day;
         public int hour;
         public int minute;
-        public UnityEvent action;
+        public ActionSO action;
     }
 }
