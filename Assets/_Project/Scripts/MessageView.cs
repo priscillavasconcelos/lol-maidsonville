@@ -45,7 +45,15 @@ public class MessageView : MonoBehaviour
         _characterName.text = dialogue.Phrases[0].Character.Character.CharacterName;
         _characterRole.text = dialogue.Phrases[0].Character.Character.CharacterRole.RoleName;
 
-        _messageText.text = dialogue.Phrases[0].Text.Substring(0, _limitCharacters) + "...";
+        if (dialogue.Phrases[0].Text.Length < _limitCharacters)
+        {
+            _messageText.text = dialogue.Phrases[0].Text;
+        }
+        else
+        {
+            _messageText.text = dialogue.Phrases[0].Text.Substring(0, _limitCharacters) + "...";
+        }
+        
     }
 
     private void OpenMessage()
