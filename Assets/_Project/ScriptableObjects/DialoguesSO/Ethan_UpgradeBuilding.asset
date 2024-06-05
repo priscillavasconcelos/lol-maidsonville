@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: Ethan_UpgradeBuilding
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
+      Text: Bom dia prefeito, o que podemos fazer pela cidade hoje?
+      TriggerAction:
+      - {fileID: 11400000, guid: afd85982b1ba72345b8677c60d3d57f5, type: 2}
+      - {fileID: 11400000, guid: e7086dca28a3f5444866c86b63948c78, type: 2}
+      WaitActionsToComplete: 1
+  ToJson: 

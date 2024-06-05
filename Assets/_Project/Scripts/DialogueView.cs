@@ -8,7 +8,12 @@ public class DialogueView : MonoBehaviour
 {
     public static DialogueView Instance;
 
-    [SerializeField] private GameObject _dialogueWindow; 
+    public GameObject _dialogueWindow;
+
+    public GameObject choices;
+    public TMP_Text yesText;
+
+    public GameObject buildingSelected;
     
     [SerializeField] private Image _characterImage;
     [SerializeField] private TMP_Text _characterName;
@@ -35,6 +40,8 @@ public class DialogueView : MonoBehaviour
             Destroy(Instance);
         
         Instance = this;
+
+        choices.SetActive(false);
     }
 
     private void OnEnable()
@@ -47,6 +54,7 @@ public class DialogueView : MonoBehaviour
         _nextPhrase.onClick.RemoveAllListeners();
     }
 
+    //A parte importante para spawnar dialogos
     public void SetDialogue(Dialogue dialogue)
     {
         _dialogue = dialogue;
@@ -104,6 +112,7 @@ public class DialogueView : MonoBehaviour
         }
         else
         {
+            choices.SetActive(false);
             _dialogueWindow.SetActive(false);
         }
     }
@@ -118,5 +127,16 @@ public class DialogueView : MonoBehaviour
         _actionsCompleted = 0;
         _canContinueDialogue = true;
         NextPhrase();
+    }
+
+    public void YesConstruct()
+    {
+        buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
+
+        if (!buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.activeInHierarchy)
+        {
+            buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
+            Debug.Log(buildingSelected.name);
+        }
     }
 }

@@ -8,12 +8,13 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private BuildingSO _building;
     [SerializeField] private Collider2D _collider;
-    [SerializeField] private GameObject _discoverPoint;
+    [SerializeField] GameObject _discoverPoint;
     [SerializeField] private GameObject _canvas;
     
     [SerializeField] private GameObject _constructionImproved;
     
-    [SerializeField] private Button _button;
+    public Button _button;
+    [SerializeField] private Button constructionButton;
     [SerializeField] private RampUpBuildingSO _rampUpBuilding;
     
     [SerializeField] private Image _timerImage;
@@ -36,9 +37,28 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         ToggleDiscoverPoint(false);
     }
 
+    private void Update()
+    {
+        if (constructionButton == null)
+            return;
+
+        if (_discoverPoint.activeInHierarchy)
+        {
+            constructionButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            constructionButton.gameObject.SetActive(true);
+            
+            if(_timerImage.gameObject.activeInHierarchy)
+                _timerImage.gameObject.SetActive(false);
+        }
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         _canvas.SetActive(true);
+        _button.gameObject.SetActive(true);
         OnBuildingClicked?.Invoke(Building);
     }
 
@@ -55,6 +75,11 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
     private void StartConstruction()
     {
         StartCoroutine(Construct());
+    }
+
+    public void ToggleConstruction(bool active)
+    {
+        _button.gameObject.SetActive(active);
     }
 
     private IEnumerator Construct()
@@ -78,5 +103,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         
         _constructionImproved.SetActive(true);
         OnConstructionFinished?.Invoke(_rampUpBuilding);
+
+        ToggleDiscoverPoint(false);
     }
 }
