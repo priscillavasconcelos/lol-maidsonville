@@ -1,8 +1,11 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WaitForBuildingInteractionActionSO", menuName = "ScriptableObjects/WaitForBuildingInteractionActionSO")]
-public class WaitForBuildingInteractionActionSO : ActionSO
+[CreateAssetMenu(fileName = "EnableButtonActionSO", menuName = "ScriptableObjects/EnableButtonActionSO")]
+
+public class EnableButtonSO : ActionSO
 {
     [SerializeField] private BuildingSO _building;
 
@@ -16,15 +19,14 @@ public class WaitForBuildingInteractionActionSO : ActionSO
             if (building.Building != _building)
                 continue;
 
-            building.ToggleInteraction(true);
-            building.OnBuildingClicked += (building) => PerformAction();
-            building._button.enabled = false;
+            OnActionCompleted?.Invoke(this);
+            building._button.enabled = true;
             break;
         }
     }
 
     public override void PerformAction()
     {
-        OnActionCompleted?.Invoke(this);
+
     }
 }

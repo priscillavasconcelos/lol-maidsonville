@@ -46,6 +46,7 @@ MonoBehaviour:
       Text: "Basta o senhor agora clicar em \u201Cenviar equipe de constru\xE7\xE3o\u201D
         que n\xF3s vamos remover essa pedra no mesmo instante."
       TriggerAction:
+      - {fileID: 11400000, guid: f2447e381ed72eb4998a3e63fdd4aa2f, type: 2}
       - {fileID: 11400000, guid: 6313281b43f5e0c4eb4ca48309d9a864, type: 2}
       WaitActionsToComplete: 1
     - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
