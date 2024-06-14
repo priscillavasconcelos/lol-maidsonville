@@ -14,6 +14,7 @@ public class UpgradeBuildingMessage : MonoBehaviour
         DialogueView.Instance.SetDialogue(buildingDialogue.Dialogue);
         DialogueView.Instance.choices.SetActive(true);
         DialogueView.Instance.buildingSelected = _building;
+        DialogueView.Instance.ChangeBuildingSelected();
     }
 
     public void ChangeText(string text)

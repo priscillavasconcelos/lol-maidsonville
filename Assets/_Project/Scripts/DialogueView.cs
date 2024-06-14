@@ -14,6 +14,7 @@ public class DialogueView : MonoBehaviour
     public TMP_Text yesText;
 
     public GameObject buildingSelected;
+    GameObject previousBuilding;
     
     [SerializeField] private Image _characterImage;
     [SerializeField] private TMP_Text _characterName;
@@ -131,12 +132,61 @@ public class DialogueView : MonoBehaviour
 
     public void YesConstruct()
     {
-        buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
-
-        if (!buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.activeInHierarchy)
+        if(buildingSelected.GetComponent<BuildingInteraction>() != null)
         {
             buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
-            Debug.Log(buildingSelected.name);
+
+            if (!buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.activeInHierarchy)
+            {
+                buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
+                Debug.Log(buildingSelected.name);
+            }
+        }
+        if(buildingSelected.GetComponent<CornerInteractions>() != null)
+        {
+            buildingSelected.GetComponent<CornerInteractions>().buttonHolder.gameObject.SetActive(true);
+
+            if (!buildingSelected.GetComponent<CornerInteractions>().buttonHolder.gameObject.activeInHierarchy)
+            {
+                buildingSelected.GetComponent<CornerInteractions>().buttonHolder.gameObject.SetActive(true);
+                Debug.Log(buildingSelected.name);
+            }
+        }
+    }
+
+    public void NoConstruct()
+    {
+        if (buildingSelected.GetComponent<BuildingInteraction>() != null)
+        {
+            buildingSelected.GetComponent<BuildingInteraction>()._discoverPoint.gameObject.SetActive(false);
+        }
+        if (buildingSelected.GetComponent<CornerInteractions>() != null)
+        {
+            buildingSelected.GetComponent<CornerInteractions>()._discoverPoint.gameObject.SetActive(false);
+        }
+
+    }
+
+    public void ChangeBuildingSelected()
+    {
+        if(previousBuilding == null)
+        {
+            previousBuilding = buildingSelected;
+        }
+        if(buildingSelected != previousBuilding)
+        {
+            if (previousBuilding.GetComponent<BuildingInteraction>() != null)
+            {
+                previousBuilding.GetComponent<BuildingInteraction>()._discoverPoint.gameObject.SetActive(false);
+                previousBuilding.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(false);
+                previousBuilding = buildingSelected;
+            }
+            if (previousBuilding.GetComponent<CornerInteractions>() != null)
+            {
+                previousBuilding.GetComponent<CornerInteractions>()._discoverPoint.gameObject.SetActive(false);
+                previousBuilding.GetComponent<CornerInteractions>().buttonHolder.gameObject.SetActive(false);
+                previousBuilding = buildingSelected;
+            }
         }
     }
 }
