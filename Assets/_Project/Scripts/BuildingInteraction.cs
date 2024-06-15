@@ -15,6 +15,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _constructionDestroyed;
     
     public Button _button;
+    public GameObject buttonHolder;
     [SerializeField] private Button constructionButton;
     [SerializeField] private RampUpBuildingSO _rampUpBuilding;
     [SerializeField] private bool isUpgraded;
@@ -60,7 +61,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         _canvas.SetActive(true);
-        _button.gameObject.SetActive(true);
+        buttonHolder.gameObject.SetActive(true);
         OnBuildingClicked?.Invoke(Building);
     }
 
@@ -87,7 +88,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    private void StartConstruction()
+    public void StartConstruction()
     {
         StartCoroutine(Construct());
     }
@@ -104,7 +105,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         
         OnConstructionStarted?.Invoke(_rampUpBuilding);
         _timerImage.gameObject.SetActive(true);
-        _button.gameObject.SetActive(false);
+        buttonHolder.gameObject.SetActive(false);
         isUpgraded = true;
         
         float normalizedTime = 0;
@@ -117,7 +118,8 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         
         _rampUpBuilding.PerformAction();
         
-        _constructionImproved.SetActive(true);
+        if(_constructionImproved != null)
+            _constructionImproved.SetActive(true);
         OnConstructionFinished?.Invoke(_rampUpBuilding);
 
         ToggleDiscoverPoint(false);

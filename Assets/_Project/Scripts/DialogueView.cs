@@ -135,11 +135,11 @@ public class DialogueView : MonoBehaviour
     {
         if(buildingSelected.GetComponent<BuildingInteraction>() != null)
         {
-            buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
+            buildingSelected.GetComponent<BuildingInteraction>().buttonHolder.gameObject.SetActive(true);
 
-            if (!buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.activeInHierarchy)
+            if (!buildingSelected.GetComponent<BuildingInteraction>().buttonHolder.gameObject.activeInHierarchy)
             {
-                buildingSelected.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(true);
+                buildingSelected.GetComponent<BuildingInteraction>().buttonHolder.gameObject.SetActive(true);
                 Debug.Log(buildingSelected.name);
             }
         }
@@ -179,7 +179,7 @@ public class DialogueView : MonoBehaviour
             if (previousBuilding.GetComponent<BuildingInteraction>() != null)
             {
                 previousBuilding.GetComponent<BuildingInteraction>()._discoverPoint.gameObject.SetActive(false);
-                previousBuilding.GetComponent<BuildingInteraction>()._button.gameObject.SetActive(false);
+                previousBuilding.GetComponent<BuildingInteraction>().buttonHolder.gameObject.SetActive(false);
                 previousBuilding = buildingSelected;
                 Debug.Log(previousBuilding.name);
             }
