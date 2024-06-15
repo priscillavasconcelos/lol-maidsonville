@@ -18,18 +18,29 @@ MonoBehaviour:
       Text: "Ah, Senhor Prefeito, que prazer t\xEA-lo aqui conosco! Sou Johnson,
         o respons\xE1vel por trazer as \xFAltimas not\xEDcias sobre o tempo e educa\xE7\xE3o
         para nossa comunidade.\r"
+      TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
       Text: "Aqui na emissora estamos comprometidos em fornecer informa\xE7\xF5es
         precisas e relevantes para todos os moradores da cidade. "
+      TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
       Text: "Seja sobre as condi\xE7\xF5es clim\xE1ticas ou programas educacionais,
         estamos sempre prontos para informar."
+      TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
       Text: "Sempre que o senhor desejar passar uma not\xEDcia \xE0 comunidade, bastar\xE1
         dar um clique em nossa emissora e solicitar um comunicado especial. \r"
+      TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 193e45979ffb4ac4daaf67a79de1faa7, type: 2}
       Text: "Terei o maior prazer em transmitir sua mensagem para toda a cidade!
         Juntos podemos fazer a diferen\xE7a!"
+      TriggerAction:
+      - {fileID: 11400000, guid: be4ceeca98c14c747b2eb01ad9fa91d4, type: 2}
+      WaitActionsToComplete: 0
   ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
 
     "1bd70322-ca1d-43b5-85cd-f9f93679efe4"

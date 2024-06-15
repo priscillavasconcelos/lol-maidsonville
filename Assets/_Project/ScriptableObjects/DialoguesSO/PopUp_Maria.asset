@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: PopUp_Maria
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 43d4e901aa79f9f4dbe91b6edd66f3a9, type: 2}
+      Text: "Ola novamente ser prefeito!!! Tudo bem com o/a sr? Estou aqui para informar
+        que nosso equipamento de detec\xE7\xE3o de desastres \xE9 mais velho que
+        a cidade! \xC9 muito importante investir na ci\xEAncia. Com melhores equipamentos,
+        podemos dar avisos com mais antecedencia!"
+      TriggerAction: []
+      WaitActionsToComplete: 0
+  ToJson: '
+
+'

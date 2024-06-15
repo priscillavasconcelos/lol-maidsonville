@@ -19,43 +19,53 @@ MonoBehaviour:
         de educar nossa popula\xE7\xE3o sobre os cuidados necess\xE1rios diante de
         potenciais desastres naturais que possam assolar nossa cidade."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Como educador, acredito firmemente que o conhecimento \xE9 a melhor
         arma contra a adversidade."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Ao preparar nossos cidad\xE3os para lidar com os desafios que a natureza
         pode nos impor, estamos n\xE3o apenas reduzindo o risco de perdas humanas
         e materiais, mas tamb\xE9m fortalecendo o tecido de nossa comunidade.\r"
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Cada evento clim\xE1tico traz consigo uma s\xE9rie de precau\xE7\xF5es
         e medidas preventivas espec\xEDficas. "
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Seja um terremoto, uma tempestade tropical ou um inc\xEAndio florestal,
         \xE9 essencial que nossa popula\xE7\xE3o esteja bem informada sobre como
         agir em cada situa\xE7\xE3o."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "\xC9 por isso que proponho a implementa\xE7\xE3o de treinamentos regulares
         para desastres naturais em nossa comunidade."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Quando houver um alerta de poss\xEDvel desastre, bastar\xE1 que o senhor,
         como l\xEDder da cidade, venha at\xE9 nossa escola e selecione a op\xE7\xE3o
         \"Fazer Treinamento para Desastre Natural\"."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Este treinamento ter\xE1 um custo, \xE9 verdade, mas esse custo \xE9
         \xEDnfimo quando comparado com as potenciais perdas que poder\xEDamos sofrer
         se nossa popula\xE7\xE3o n\xE3o estivesse devidamente informada e preparada."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: 1a9570fa8c139aa4d8329f2c13805c6f, type: 2}
       Text: "Ao investir na educa\xE7\xE3o e no treinamento de nossa comunidade,
         estamos investindo no futuro de nossa cidade e na seguran\xE7a de nossos
         cidad\xE3os. \r"
-      TriggerAction: []
+      TriggerAction:
+      - {fileID: 11400000, guid: be4ceeca98c14c747b2eb01ad9fa91d4, type: 2}
+      WaitActionsToComplete: 0
   ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
 
     "1bd70322-ca1d-43b5-85cd-f9f93679efe4"

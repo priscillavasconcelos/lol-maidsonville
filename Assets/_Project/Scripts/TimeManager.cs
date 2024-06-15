@@ -28,23 +28,29 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
-        accumulatedTime += Time.deltaTime * timeMultiplier;
-
-        while (accumulatedTime >= 1f)
+        if(GameManager.Instance != null)
         {
-            accumulatedTime -= 1f;
-            
-            currentTime += TimeSpan.FromMinutes(5);
-
-            OnTimeChanged?.Invoke(this, currentTime);
-
-            if (currentTime.TotalSeconds >= secondsPerDay)
+            if (!GameManager.Instance.resultsScreen.activeInHierarchy)
             {
-                currentTime = new TimeSpan(0, 0, 0);
-                OnTimeChanged?.Invoke(this, currentTime); // Trigger event at new day start
-            }
+                accumulatedTime += Time.deltaTime * timeMultiplier;
 
-            topHudView.UpdateTimer(GetFormattedTime());
+                while (accumulatedTime >= 1f)
+                {
+                    accumulatedTime -= 1f;
+
+                    currentTime += TimeSpan.FromMinutes(5);
+
+                    OnTimeChanged?.Invoke(this, currentTime);
+
+                    if (currentTime.TotalSeconds >= secondsPerDay)
+                    {
+                        currentTime = new TimeSpan(0, 0, 0);
+                        OnTimeChanged?.Invoke(this, currentTime); // Trigger event at new day start
+                    }
+
+                    topHudView.UpdateTimer(GetFormattedTime());
+                }
+            }
         }
     }
 

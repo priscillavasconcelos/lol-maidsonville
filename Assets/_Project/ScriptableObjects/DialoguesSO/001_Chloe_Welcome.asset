@@ -19,33 +19,41 @@ MonoBehaviour:
         local, e estou aqui para discutir um assunto de extrema import\xE2ncia para
         a seguran\xE7a e o bem-estar de nossa comunidade."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "Como sabemos, nosso hospital desempenha um papel crucial em momentos
         de crise, especialmente durante desastres naturais.\r"
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "\xC9 por isso que, eventualmente, precisaremos procurar o apoio do gabinete
         do prefeito para solicitar equipamentos adicionais."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "Esses equipamentos podem incluir desde suprimentos m\xE9dicos b\xE1sicos
         at\xE9 equipamentos de emerg\xEAncia especializados, como respiradores e
         kits de primeiros socorros."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "Compreendemos que cada pedido desses ter\xE1 um custo associado. No
         entanto, \xE9 importante ressaltar que o custo de n\xE3o estarmos preparados
         para atender adequadamente a nossa popula\xE7\xE3o em momentos de crise seria
         muito maior."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "A falta de equipamentos e recursos adequados pode resultar em perdas
         humanas e danos irrepar\xE1veis \xE0 sa\xFAde p\xFAblica."
       TriggerAction: []
+      WaitActionsToComplete: 0
     - Character: {fileID: 11400000, guid: a76112c94abef2040be2e383a6d55a20, type: 2}
       Text: "Portanto, ao investir na capacidade de resposta do nosso hospital, estamos
         investindo na seguran\xE7a e no bem-estar de todos os cidad\xE3os."
-      TriggerAction: []
+      TriggerAction:
+      - {fileID: 11400000, guid: be4ceeca98c14c747b2eb01ad9fa91d4, type: 2}
+      WaitActionsToComplete: 0
   ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
 
     "1bd70322-ca1d-43b5-85cd-f9f93679efe4"

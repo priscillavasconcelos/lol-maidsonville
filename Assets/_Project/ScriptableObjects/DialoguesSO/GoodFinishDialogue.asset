@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9893dddf231354a9aac8096ea2601c, type: 3}
+  m_Name: GoodFinishDialogue
+  m_EditorClassIdentifier: 
+  Dialogue:
+    Phrases:
+    - Character: {fileID: 11400000, guid: 4af67bd22ac0a49419d8d3123ddaafd7, type: 2}
+      Text: "Parab\xE9ns senhor prefeito. Voc\xEA foi um bom governante. \xC9 claro
+        que\_ existem pontos que podem ser melhorados, mas no geral voc\xEA foi bem.
+        Veja o relat\xF3rio a seguir da sua gest\xE3o."
+      TriggerAction: []
+      WaitActionsToComplete: 0
+  ToJson: '
+
+'

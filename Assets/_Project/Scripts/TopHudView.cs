@@ -35,6 +35,18 @@ public class TopHudView : HudView<TopHudView>
     {
         _moneyAmount += newValue;
         _moneyAmountText.text = _moneyAmount.ToString();
+
+        if (GameManager.Instance == null)
+            return;
+
+        if(_moneyAmount < 0)
+        {
+            GameManager.Instance.noMoney = true;
+        }
+        else
+        {
+            GameManager.Instance.noMoney = false;
+        }
     }
 
     public void UpdateTimer(string newValue)

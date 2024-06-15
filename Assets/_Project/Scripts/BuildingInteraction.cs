@@ -18,7 +18,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
     public GameObject buttonHolder;
     [SerializeField] private Button constructionButton;
     [SerializeField] private RampUpBuildingSO _rampUpBuilding;
-    [SerializeField] private bool isUpgraded;
+    public bool isUpgraded;
     
     [SerializeField] private Image _timerImage;
 
@@ -85,6 +85,8 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         {
             TopHudView.Instance.UpdateMoneyAmount(disaster.CostToRepairWithoutUpgraded);
             _constructionDestroyed.SetActive(true) ;
+
+            GameManager.Instance.GameOver();
         }
     }
 
@@ -120,6 +122,7 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         
         if(_constructionImproved != null)
             _constructionImproved.SetActive(true);
+
         OnConstructionFinished?.Invoke(_rampUpBuilding);
 
         ToggleDiscoverPoint(false);

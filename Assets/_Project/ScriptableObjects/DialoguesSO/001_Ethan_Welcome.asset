@@ -59,7 +59,8 @@ MonoBehaviour:
     - Character: {fileID: 11400000, guid: 685cf375cb4358e428c4ac684b61d879, type: 2}
       Text: "Agora, quando tiver um tempinho, identifique outros locais que possam
         ser perigosos \xE0 popula\xE7\xE3o e nos chame!"
-      TriggerAction: []
+      TriggerAction:
+      - {fileID: 11400000, guid: be4ceeca98c14c747b2eb01ad9fa91d4, type: 2}
       WaitActionsToComplete: 0
   ToJson: '"2bb29aca-f407-4388-a0c8-bb4c746ca6d4" : "test1",
 
