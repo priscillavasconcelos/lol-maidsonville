@@ -13,7 +13,12 @@ public class DialogueManager : MonoBehaviour
         DialogueView.Instance.SetDialogue(_dialogue.Dialogue);
     }
 
-    public void EndTutorial()
+    public void CallEndTutorial()
+    {
+        StartCoroutine(EndTutorial());
+    }
+
+    IEnumerator EndTutorial()
     {
         if (MessageStackController.Instance.transform.childCount > 0)
         {
@@ -31,9 +36,12 @@ public class DialogueManager : MonoBehaviour
             }
 
 
+            yield return new WaitUntil(() => !DialogueView.Instance._dialogueWindow.activeInHierarchy);
+
             if (allChildrenInactive)
             {
                 DialogueView.Instance.SetDialogue(_dialogueEndTutorial.Dialogue);
+                FindObjectOfType<TimeManager>().timeRunning = true;
             }
             
         }

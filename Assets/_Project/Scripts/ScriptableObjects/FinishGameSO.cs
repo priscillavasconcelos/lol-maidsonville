@@ -3,18 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "FinishTutorialDialogueSO", menuName = "ScriptableObjects/FinishTutorialDialogueSO")]
-public class FinishTutorialDialogueSO : ActionSO
+[CreateAssetMenu(fileName = "FinishGameSO", menuName = "ScriptableObjects/FinishGameSO")]
+public class FinishGameSO : ActionSO
 {
     public override event Action<ActionSO> OnActionCompleted;
 
     public override void Initialize()
     {
-        var dialogueManager = FindObjectOfType<DialogueManager>();
+        var dialogueManager = FindObjectOfType<GameManager>();
 
-        if(dialogueManager != null)
+        if (dialogueManager != null)
         {
-            dialogueManager.CallEndTutorial();
+            dialogueManager.ResultScreen();
         }
 
         OnActionCompleted?.Invoke(this);
@@ -22,6 +22,6 @@ public class FinishTutorialDialogueSO : ActionSO
 
     public override void PerformAction()
     {
-        
+
     }
 }

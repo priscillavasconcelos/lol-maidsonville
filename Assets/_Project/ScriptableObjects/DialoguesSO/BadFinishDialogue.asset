@@ -33,6 +33,7 @@ MonoBehaviour:
       Text: "\xC9 isso sr. prefeito, digo, ex prefeito, infelizmente seu mandato
         acabou. Veja agora o relat\xF3rio de sua gest\xE3o e quais quesitos poderiam
         melhorar. At\xE9 outra vez!"
-      TriggerAction: []
+      TriggerAction:
+      - {fileID: 11400000, guid: ba01d21dca728b946b69d41a74159e8f, type: 2}
       WaitActionsToComplete: 0
   ToJson: 

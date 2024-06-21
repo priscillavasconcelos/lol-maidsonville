@@ -95,8 +95,6 @@ public class GameManager : MonoBehaviour
         {
             DialogueView.Instance.SetDialogue(somethingWrongFeedbackDialogue.Dialogue);
         }
-
-        resultsScreen.SetActive(true);
     }
 
     public void GameOver()
@@ -104,7 +102,11 @@ public class GameManager : MonoBehaviour
         if (noMoney)
         {
             DialogueView.Instance.SetDialogue(gameOverDialogue.Dialogue);
-            resultsScreen.SetActive(true);
         }
+    }
+
+    public void ResultScreen()
+    {
+        resultsScreen.SetActive(true);
     }
 }

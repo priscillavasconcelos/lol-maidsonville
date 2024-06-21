@@ -16,6 +16,8 @@ public class TimeManager : MonoBehaviour
     private TimeSpan currentTime;
     private float accumulatedTime = 0f;
 
+    public bool timeRunning = false;
+
     // Evento único para o tempo
     public event EventHandler<TimeSpan> OnTimeChanged;
 
@@ -32,6 +34,9 @@ public class TimeManager : MonoBehaviour
         {
             if (!GameManager.Instance.resultsScreen.activeInHierarchy)
             {
+                if (!timeRunning)
+                    return;
+
                 accumulatedTime += Time.deltaTime * timeMultiplier;
 
                 while (accumulatedTime >= 1f)
