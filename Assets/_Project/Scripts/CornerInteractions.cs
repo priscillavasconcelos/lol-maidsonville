@@ -15,6 +15,8 @@ public class CornerInteractions : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _constructionImprovedLight;
     [SerializeField] private GameObject _constructionImprovedHydrant;
 
+    [SerializeField] private CheckMark checkMark;
+
     public GameObject buttonHolder;
     [SerializeField] Button _buttonLightpole;
     [SerializeField] Button _buttonHydrant;
@@ -159,6 +161,9 @@ public class CornerInteractions : MonoBehaviour, IPointerClickHandler
 
             _constructionImprovedHydrant.SetActive(true);
             OnConstructionFinished?.Invoke(_rampUpBuildingHydrant);
+            
+            if (checkMark != null)
+                checkMark.PlayerMadeIt();
 
             ToggleDiscoverPoint(false);
         }

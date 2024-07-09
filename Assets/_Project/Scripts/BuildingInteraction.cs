@@ -13,6 +13,8 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
     
     [SerializeField] private GameObject _constructionImproved;
     [SerializeField] private GameObject _constructionDestroyed;
+
+    [SerializeField] private CheckMark checkMark;
     
     public Button _button;
     public GameObject buttonHolder;
@@ -122,6 +124,9 @@ public class BuildingInteraction : MonoBehaviour, IPointerClickHandler
         
         if(_constructionImproved != null)
             _constructionImproved.SetActive(true);
+
+        if(checkMark != null)
+            checkMark.PlayerMadeIt();
 
         OnConstructionFinished?.Invoke(_rampUpBuilding);
 

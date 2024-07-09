@@ -15,9 +15,12 @@ MonoBehaviour:
   Dialogue:
     Phrases:
     - Character: {fileID: 11400000, guid: 4af67bd22ac0a49419d8d3123ddaafd7, type: 2}
-      Text: "Parab\xE9ns senhor prefeito. Voc\xEA foi um bom governante. \xC9 claro
-        que\_ existem pontos que podem ser melhorados, mas no geral voc\xEA foi bem.
-        Veja o relat\xF3rio a seguir da sua gest\xE3o."
+      Text: "Parab\xE9ns senhor prefeito. Voc\xEA foi um bom governante. "
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 4af67bd22ac0a49419d8d3123ddaafd7, type: 2}
+      Text: "\xC9 claro que\_ existem pontos que podem ser melhorados, mas no geral
+        voc\xEA foi bem. Veja o relat\xF3rio a seguir da sua gest\xE3o."
       TriggerAction:
       - {fileID: 11400000, guid: ba01d21dca728b946b69d41a74159e8f, type: 2}
       WaitActionsToComplete: 0

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<GroupsOfBuildings> disasterToCheckBuildings = new List<GroupsOfBuildings>();
     [SerializeField] int currentGroupChecked;
+
+    [SerializeField] List<Resultados> resultados = new List<Resultados>();
 
     [SerializeField] DialogueSO gameOverDialogue;
     [SerializeField] DialogueSO positiveFeedbackDialogue;
@@ -45,8 +48,6 @@ public class GameManager : MonoBehaviour
 
     public void ReceiveMoneyForDisaster()
     {
-        Debug.Log(1);
-
         // Ensure currentGroupChecked is within the valid range
         if (currentGroupChecked < 0 || currentGroupChecked >= disasterToCheckBuildings.Count)
         {
@@ -82,6 +83,8 @@ public class GameManager : MonoBehaviour
         // Update the money amount in the HUD
         TopHudView.Instance.UpdateMoneyAmount(moneyAmountToReceive);
 
+        resultados[currentGroupChecked].gameObject.SetActive(true);
+
         currentGroupChecked++;
     }
 
@@ -105,8 +108,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ResultScreen()
+    public void CallResultScreen()
     {
+        StartCoroutine(ResultScreen());
+    }
+
+    IEnumerator ResultScreen()
+    {
+
+        yield return new WaitUntil(() => !DialogueView.Instance._dialogueWindow.activeInHierarchy);
+
         resultsScreen.SetActive(true);
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

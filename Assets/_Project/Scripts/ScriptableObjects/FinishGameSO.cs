@@ -10,11 +10,13 @@ public class FinishGameSO : ActionSO
 
     public override void Initialize()
     {
+        Debug.Log("chama");
+
         var dialogueManager = FindObjectOfType<GameManager>();
 
         if (dialogueManager != null)
         {
-            dialogueManager.ResultScreen();
+            dialogueManager.CallResultScreen();
         }
 
         OnActionCompleted?.Invoke(this);

@@ -16,8 +16,12 @@ MonoBehaviour:
     Phrases:
     - Character: {fileID: 11400000, guid: 4af67bd22ac0a49419d8d3123ddaafd7, type: 2}
       Text: "Parab\xE9ns seu prefeito! Voc\xEA foi o melhor prefeito de toda a hist\xF3ria
-        da cidade! Voc\xEA conseguiu proteger a cidade sempre da melhor forma e agora
-        teremos uma est\xE1tua do senhor no meio da cidade para eternizar sua gest\xE3o!"
+        da cidade! "
+      TriggerAction: []
+      WaitActionsToComplete: 0
+    - Character: {fileID: 11400000, guid: 4af67bd22ac0a49419d8d3123ddaafd7, type: 2}
+      Text: "Voc\xEA conseguiu proteger a cidade sempre da melhor forma e agora teremos
+        uma est\xE1tua do senhor no meio da cidade para eternizar sua gest\xE3o!"
       TriggerAction:
       - {fileID: 11400000, guid: ba01d21dca728b946b69d41a74159e8f, type: 2}
       WaitActionsToComplete: 0
